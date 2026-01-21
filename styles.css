@@ -1,0 +1,309 @@
+* {
+    font-family: "Barlow Condensed", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    margin: 0, 0, 0, 0;
+    position: sticky;
+    top: 0;
+}
+
+@media (max-width: 768px) {
+ header {
+     flex-direction: column;
+     align-items: center;
+     position:static;
+
+ }
+
+ .link-header {
+    display: none;
+ }
+
+ .button-header {
+    margin: 20px 0 0;
+ }
+ }
+
+.hero {
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 50px;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #1c1c1c;
+    color: rgb(255, 238, 0);
+}
+
+@media (max-width: 480px) {
+   .hero {
+    padding-top: 140px;
+    padding-bottom: 60px;
+   } 
+
+   .hero h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+   }
+}
+
+   @media (max-width: 768px) {
+       .hero-content h2 {
+        font-size: 32px;
+       }
+
+       .hero-content p {
+        font-size: 18px;
+       } 
+
+       main {
+        padding: 40px 20px;
+       }
+   }
+
+
+.hero p {
+    font-size: 22px;
+    color: #ffffff;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+
+
+.hero h1 {
+    font-size: clamp(36px, 10vw, 80px);
+    line-height: 1.15;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgb(255, 238, 0);
+
+    text-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    margin-bottom: 20px;
+}
+
+
+.link-header {
+    font-weight: 900;
+    font-size: 22px;
+    color: #ffffff;
+    margin-left: 35px;
+    cursor: pointer;
+}
+
+.button-header {
+    background: rgb(255, 238, 0);
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    font-weight: 900;
+    font-size: 20px;
+    margin: 40px;
+}
+
+.button-header:hover {
+    background: #e6d800;
+}
+
+.button-header:active {
+    transform: scale(0.98);
+    background: #777007;
+}
+
+.img-header {
+    cursor: pointer;
+}
+
+main {
+    min-height: 80vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: url('./assets/IMG_logo-barbearia.PNG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 40px;
+    background-blend-mode: darken;
+    color: #fff;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main p {
+    font-size: 20px;
+}
+.hero-content{
+    max-width: 900px;
+text-align: center;
+color: #ffffff;
+}
+
+.hero-content h2 {
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.hero-content p {
+    font-size: 22px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+section, article {
+    padding: 40px 60px;
+}
+section h2, article h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+ul li, ol li {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.servicos, .profissionais {
+    background-color: #111;
+    color: #fff;
+}
+
+.lista-box {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #1c1c1c;
+    border-radius: 16px;
+}
+
+.lista-box li {
+    list-style-type: none;
+    padding: 12px 0;
+    border-bottom: 1px solid #333;
+    font-size: 22px;
+}
+
+@media (max-width: 768px) {
+    .lista-box {
+        padding: 20px;
+    }
+
+    .lista-box li {
+        font-size: 20px;
+    }
+}
+
+.lista-box li:last-child {
+    border-bottom: none;
+}
+
+.servicos h2, .profissionais h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(255, 238, 0);
+}
+.galeria {
+    background-color: #111;
+    padding: 30px 20px;
+    color: #fff;
+}
+
+.galeria h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(255, 238, 0);
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.galeria-grid img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.galeria-grid img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .galeria-grid img {
+        height: 220px;
+    }
+}
+
+.Contato {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.Contato h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.Contato p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.Contato a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: rgb(255, 238, 0) ;
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 30px;
+}
+
+.contato-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 250px;
+    border: none;
+    border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .galeria-grid img {
+    height: 220px;
+  }
+}
