@@ -19,4 +19,5 @@
   <img src="https://github.com/malcomtribe-ai/projeto-responsivo-barbearia-mm/blob/master/assets/layout-img03-mobile.PNG?raw=true" alt="mobile-3" width="300px" />  <img src="https://github.com/malcomtribe-ai/projeto-responsivo-barbearia-mm/blob/master/assets/layout-img04-mobile.PNG?raw=true" alt="mobile-4" width="300px" />
    <img src="https://github.com/malcomtribe-ai/projeto-responsivo-barbearia-mm/blob/master/assets/layout-img05-mobile.PNG?raw=true" alt="mobile-5" width="300px" />  <img src="https://github.com/malcomtribe-ai/projeto-responsivo-barbearia-mm/blob/master/assets/layout-img06-mobile.PNG?raw=true" alt="mobile-6" width="300px" />
    <br>
-   <h3>📌Deploy: </h3>
+   <h3>📌Deploy: https://malcomtribe-ai.github.io/projeto-responsivo-barbearia-mm/
+   </h3>
